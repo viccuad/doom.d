@@ -75,7 +75,7 @@
   `(default :background ,(doom-color 'bg)) ;; bg-alt is taken by markdown code blocks
   `(solaire-default-face :background ,(doom-darken 'base3 0.5)) ;; darker text background
   `(solaire-hl-line-face :background ,(doom-color 'base3)) ;; used for highlighting current window. bg-alt is taken by markdown code blocks
-  `(fill-column-indicator :foreground ,(doom-color 'bg)) ;; subtle indicator
+  `(fill-column-indicator :foreground ,(doom-color 'bg-alt)) ;; subtle indicator
   ;; italics:
   `(font-lock-comment-face :slant italic)
   ;;'(font-lock-keyword-face :slant italic)
