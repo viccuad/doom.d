@@ -48,3 +48,5 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+
+(package! tmux-pane :pin "92f67c6d270c7c923edcde81a235ed0b49a61a70")
