@@ -145,3 +145,6 @@
 
 (after! treemacs
   (setq treemacs-follow-mode t))
+
+;; (setq auto-save-default t
+;;       make-backup-files t)
