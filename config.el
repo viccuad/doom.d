@@ -142,3 +142,6 @@
         (:prefix "t"
          :desc "vpane" :nv "v" #'tmux-pane-toggle-vertical
          :desc "hpane" :nv "h" #'tmux-pane-toggle-horizontal)))
+
+(after! treemacs
+  (setq treemacs-follow-mode t))
