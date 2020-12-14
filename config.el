@@ -161,3 +161,6 @@
 
 ;; (setq auto-save-default t
 ;;       make-backup-files t)
+
+;; (setq which-key-idle-delay 0.2
+;;       which-key-idle-secondary-delay 0.2)
