@@ -50,3 +50,5 @@
 ;(unpin! t)
 
 (package! tmux-pane :pin "92f67c6d270c7c923edcde81a235ed0b49a61a70")
+
+(package! treemacs-all-the-icons :pin "16b0819c6f27f45fe0495a29eeff5f01bd765b04")
