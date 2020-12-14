@@ -65,8 +65,6 @@
   ;; Allow to escape from the visual state as from insert.
   (delete 'visual evil-escape-excluded-states))
 
-(setq +treemacs-git-mode 'extended) ;; highlight files in addition to folders. Requires python3
-
 ;; open flycheck errors as transient bottom
 (set-popup-rule! "^\\*Flycheck errors\\*$" :select t :side 'bottom :size 0.15)
 
@@ -144,11 +142,11 @@
          :desc "vpane" :nv "v" #'tmux-pane-toggle-vertical
          :desc "hpane" :nv "h" #'tmux-pane-toggle-horizontal)))
 
+(setq +treemacs-git-mode 'extended) ;; highlight files in addition to folders. Requires python3
 (after! treemacs
   (setq treemacs-follow-mode t)
   (setq treemacs-no-png-images t) ;; use TUI chars for icons even in GUI
   (setq treemacs-width 25))
-
 
 ;; FIXME icons are swapped: `+` when `-`, etc
 (use-package treemacs-all-the-icons
