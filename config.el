@@ -68,7 +68,7 @@
 (setq +treemacs-git-mode 'extended) ;; highlight files in addition to folders. Requires python3
 
 ;; open flycheck errors as transient bottom
-(set-popup-rule! "^\\*Flycheck errors\\*$" :select nil :side 'bottom :size 0.15)
+(set-popup-rule! "^\\*Flycheck errors\\*$" :select t :side 'bottom :size 0.15)
 
 (custom-set-faces!
   ;; fix solaire for molokai:
