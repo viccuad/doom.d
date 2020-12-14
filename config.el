@@ -79,6 +79,7 @@
   ;; italics:
   `(font-lock-comment-face :slant italic)
   ;;'(font-lock-keyword-face :slant italic)
+  `(treemacs-git-modified-face :foreground ,(doom-color 'cyan))
   )
 
 ;; remove character on vertical separators
