@@ -109,11 +109,11 @@
   (setq lsp-ui-doc-enable t))
 
 (after! magit
-   ;; autorefresh magit status buffer after save
-   (add-hook 'after-save-hook 'magit-after-save-refresh-status t)
-   ;; show all diffs with word-granularity, not only current
-   ;; (setq magit-diff-refine-hunk 'all)
-   )
+  ;; autorefresh magit status buffer after save
+  (add-hook 'after-save-hook 'magit-after-save-refresh-status t)
+  ;; (setq magit-diff-refine-hunk 'all) ;; show all diffs with word-granularity, not only current
+  (setq magit-save-repository-buffers 'dontask) ;; save buffers when opening magit. We have git, so this is safe
+  )
 
 ;; Change authinfo's default path:
 (setq auth-sources
