@@ -115,7 +115,7 @@
 
 ;; Change authinfo's default path:
 (setq auth-sources
-      '((:source "~/.spacemacs.d/secrets/authinfo.gpg"))) ;; FIXME fix path
+      '((:source "~/.doom.d/secrets/authinfo.gpg")))
 
 (setq epg-pinentry-mode 'loopback) ;; avoid system pinentry, use emacs read password
 
