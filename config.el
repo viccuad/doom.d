@@ -146,18 +146,8 @@
 (after! treemacs
   (setq treemacs-follow-mode t)
   (setq treemacs-no-png-images t) ;; use TUI chars for icons even in GUI
-  (setq treemacs-width 25))
-
-;; FIXME icons are swapped: `+` when `-`, etc
-(use-package treemacs-all-the-icons
-  :hook (treemacs-mode . (lambda () (treemacs-load-theme 'all-the-icons))))
-;; possible options, don't work:
-;; (after! treemacs
-;;   (treemacs-load-theme "doom-colors"))
-;; Otherwise
-;; (after! treemacs
-;;   (require 'treemacs-all-the-icons)
-;;   (treemacs-load-theme "all-the-icons"))
+  (setq treemacs-width 25)
+  (setq doom-themes-treemacs-theme "Default"))
 
 ;; (setq auto-save-default t
 ;;       make-backup-files t)
