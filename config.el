@@ -70,8 +70,9 @@
 (custom-set-faces!
   ;; fix solaire for molokai:
   `(default :background ,(doom-color 'bg)) ;; bg-alt is taken by markdown code blocks
-  `(solaire-default-face :background ,(doom-darken 'base3 0.5)) ;; darker text background
-  `(solaire-hl-line-face :background ,(doom-color 'base3)) ;; used for highlighting current window
+  `(hl-line :background ,(doom-color 'base3))
+  `(vertical-border :background ,(doom-color 'bg))
+  ;; `(solaire-default-face :background ,(doom-darken 'base3 0.5)) ;; darker text background
   `(fill-column-indicator :foreground ,(doom-color 'bg-alt)) ;; subtle indicator
   ;; italics:
   `(font-lock-comment-face :slant italic)
