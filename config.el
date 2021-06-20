@@ -68,17 +68,20 @@
 (set-popup-rule! "^\\*Flycheck errors\\*$" :select t :side 'bottom :size 0.15)
 
 (custom-set-faces!
-  ;; fix solaire for molokai:
-  `(default :background ,(doom-color 'bg)) ;; bg-alt is taken by markdown code blocks
-  `(hl-line :background ,(doom-color 'base3))
-  `(vertical-border :background ,(doom-color 'bg))
-  ;; `(solaire-default-face :background ,(doom-darken 'base3 0.5)) ;; darker text background
+  ;; simplify molokai/monokais:
+  ;; bg-alt is taken by markdown code blocks
+  `(default :background ,(doom-darken 'bg-alt 0.3)) ;; bg
+  `(hl-line :background ,(doom-lighten 'bg-alt 0.1))  ;; base3
+  `(vertical-border :background ,(doom-darken 'bg-alt 0.3)) ;; same as default
   `(fill-column-indicator :foreground ,(doom-color 'bg-alt)) ;; subtle indicator
+  `(treemacs-git-modified-face :foreground ,(doom-color 'cyan))
+  ;; fix solaire for molokai:
+  ;; `(solaire-default-face :background ,(doom-darken 'base3 0.5)) ;; darker text background
   ;; italics:
   `(font-lock-comment-face :slant italic)
   ;;'(font-lock-keyword-face :slant italic)
-  `(treemacs-git-modified-face :foreground ,(doom-color 'cyan))
   )
+
 
 ;; remove character on vertical separators
 (defun my-change-window-divider ()
