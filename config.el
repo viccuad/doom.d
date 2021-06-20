@@ -57,7 +57,6 @@
 ;; from viccuad
 ;; FIXME
 ;; curly and coloured underscores in terminal (Emacs bugs opened: #45230, #45231)
-;; treemacs molokai fonts
 ;; lsp-mode format
 ;; grammar module
 
