@@ -60,6 +60,9 @@
 ;; lsp-mode format
 ;; grammar module
 
+;; enable emacs' 27 fill-column on text mode
+(add-hook! (prog-mode conf-mode text-mode) #'display-fill-column-indicator-mode)
+
 (after! evil-escape
   ;; Allow to escape from the visual state as from insert.
   (delete 'visual evil-escape-excluded-states))
