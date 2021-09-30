@@ -104,13 +104,9 @@
 (setq evil-move-cursor-back nil) ;; don't move cursor back when going to normal mode from insert
 
 ;; doom disables by default:
-;;   lsp-ui-doc-enable
 ;;   lsp-enable-folding
 ;;   lsp-enable-text-document-color
 ;;   lsp-enable-on-type-formatting
-;; always enable lsp-ui-doc instead of using K in normal mode
-(after! lsp-ui
-  (setq lsp-ui-doc-enable t))
 
 (after! magit
   ;; autorefresh magit status buffer after save
