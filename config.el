@@ -88,8 +88,8 @@
 
 ;; remove character on vertical separators
 (defun my-change-window-divider ()
-  (let ((display-table (or buffer-display-table standard-display-table)))
-    (set-display-table-slot standard-display-table 'vertical-border ? ) ;; put no character after `?`
+  (let ((display-table (or standard-display-table (make-display-table))))
+    (set-display-table-slot display-table 'vertical-border ?│) ;; put no character after `?`
     (set-window-display-table (selected-window) display-table)))
 (add-hook 'window-configuration-change-hook 'my-change-window-divider)
 
