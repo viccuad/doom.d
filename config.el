@@ -166,3 +166,12 @@
                                    :gdbpath "rust-gdb"
                                    :target nil
                                    :cwd nil))
+
+;; enable mouse scroll:
+(load "mwheel")
+(mwheel-install)
+(mouse-wheel-mode 1)
+;; (setq mouse-wheel-progressive-speed nil)
+;; (setq mouse-wheel-scroll-amount
+;; 	        '(1 ((shift) . 1)
+;; 			            ((control) . nil)))
