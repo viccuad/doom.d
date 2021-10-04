@@ -156,3 +156,13 @@
 
 ;; (setq which-key-idle-delay 0.2
 ;;       which-key-idle-secondary-delay 0.2)
+
+;; dap configuration for rust:
+(require 'dap-gdb-lldb) ;; for rust-gdb and dap-mode
+(dap-register-debug-template "Rust::GDB Run Configuration"
+                             (list :type "gdb"
+                                   :request "launch"
+                                   :name "GDB::Run"
+                                   :gdbpath "rust-gdb"
+                                   :target nil
+                                   :cwd nil))
