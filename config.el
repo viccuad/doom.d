@@ -123,7 +123,7 @@
 
 ;; Configure flycheck indicators on the left side. We can't use
 ;; flycheck-set-indication-mode because it acts buffer-locally, not globally.
-(setq +vc-gutter-default-style nil) ;; Disable default fringe styling
+;; (setq +vc-gutter-default-style nil) ;; Disable default fringe styling
 (setq-default left-margin-width 1) ;; Make sure the margin is visible to begin with
 (setq-default flycheck-indication-mode 'left-margin) ;; Move flycheck to left margin
 
