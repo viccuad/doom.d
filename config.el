@@ -76,7 +76,7 @@
 ;;  `(default :background ,(doom-darken 'bg-alt 0.3)) ;; bg
 ;;  `(hl-line :background ,(doom-lighten 'bg-alt 0.1))  ;; base3
 ;;  `(vertical-border :background ,(doom-darken 'bg-alt 0.3)) ;; same as default
-;;  `(fill-column-indicator :foreground ,(doom-color 'bg-alt)) ;; subtle indicator
+ `(fill-column-indicator :foreground ,(doom-color 'bg-alt)) ;; subtle indicator
 ;;  `(treemacs-git-modified-face :foreground ,(doom-color 'cyan))
   ;; fix solaire for molokai:
   ;; `(solaire-default-face :background ,(doom-darken 'base3 0.5)) ;; darker text background
