@@ -57,7 +57,6 @@
 ;; from viccuad
 ;; FIXME
 ;; curly and coloured underscores in terminal (Emacs bugs opened: #45230, #45231)
-;; lsp-mode format
 ;; grammar module
 
 ;; enable emacs' 27 fill-column on text mode
@@ -121,11 +120,12 @@
 
 (setq epg-pinentry-mode 'loopback) ;; avoid system pinentry, use emacs read password
 
-;; Configure flycheck indicators on the left side. We can't use
-;; flycheck-set-indication-mode because it acts buffer-locally, not globally.
-;; (setq +vc-gutter-default-style nil) ;; Disable default fringe styling
-(setq-default left-margin-width 1) ;; Make sure the margin is visible to begin with
-(setq-default flycheck-indication-mode 'left-margin) ;; Move flycheck to left margin
+;; Configure flycheck indicators on the right side. We can't use
+;; flycheck-set-indication-mode because it acts buffer-locally, not globally:
+(setq +vc-gutter-default-style nil) ;; Disable default doom fringe styling. This makes git-gutter show on margin, and doom doesn't overwrite our flycheck sets
+(setq-default left-margin-width 1) ;; Make sure the margin is visible for git-gutter
+(setq-default right-margin-width 1) ;; Make sure the margin is visible to begin with
+(setq-default flycheck-indication-mode 'right-margin)
 
 ;; Use C-{h,j,k,l} to move between panes, either emacs or tmux
 (use-package! tmux-pane
@@ -148,7 +148,7 @@
 (after! treemacs
   (setq treemacs-follow-mode t)
   (setq treemacs-no-png-images t) ;; use TUI chars for icons even in GUI
-  (setq treemacs-width 25)
+;;  (setq treemacs-width 25)
   (setq doom-themes-treemacs-theme "Default"))
 
 ;; (setq auto-save-default t
