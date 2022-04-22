@@ -52,3 +52,5 @@
 (package! tmux-pane :pin "92f67c6d270c7c923edcde81a235ed0b49a61a70")
 
 (package! treemacs-all-the-icons) ;; has no pin because it is on the same repo
+
+(package! diff-hl)

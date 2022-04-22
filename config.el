@@ -120,12 +120,19 @@
 
 (setq epg-pinentry-mode 'loopback) ;; avoid system pinentry, use emacs read password
 
-;; Configure flycheck indicators on the right side. We can't use
+;; Configure flycheck indicators on the left side. We can't use
 ;; flycheck-set-indication-mode because it acts buffer-locally, not globally:
-(setq +vc-gutter-default-style nil) ;; Disable default doom fringe styling. This makes git-gutter show on margin, and doom doesn't overwrite our flycheck sets
+(setq +vc-gutter-default-style nil) ;; Disable default doom fringe styling. This makes git-gutter show on margin, yet doom doesn't overwrite our flycheck sets
 (setq-default left-margin-width 1) ;; Make sure the margin is visible for git-gutter
 (setq-default right-margin-width 1) ;; Make sure the margin is visible to begin with
-(setq-default flycheck-indication-mode 'right-margin)
+(setq-default flycheck-indication-mode 'left-margin)
+
+;;(after! git-gutter-fringe
+;;  global-git-gutter-mode nil)
+
+;;(global-diff-hl-mode)
+;;(unless (window-system) (diff-hl-margin-mode))
+;;(setq diff-hl-side 'right)
 
 ;; Use C-{h,j,k,l} to move between panes, either emacs or tmux
 (use-package! tmux-pane
