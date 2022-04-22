@@ -54,3 +54,5 @@
 (package! treemacs-all-the-icons) ;; has no pin because it is on the same repo
 
 (package! diff-hl)
+
+(package! solaire-mode :disable t) ;; disable solaire-mode, on terminal it changes backgrounds
