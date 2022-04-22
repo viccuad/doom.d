@@ -106,6 +106,24 @@
 ;;   lsp-enable-folding
 ;;   lsp-enable-text-document-color
 ;;   lsp-enable-on-type-formatting
+(setq lsp-ui-doc-enable 'true)
+;; (setq lsp-ui-doc-show-with-mouse nil)
+(setq lsp-ui-doc-show-with-cursor 'true)
+;(setq lsp-lens-enable 'true)
+;;;(setq lsp-headerline-breadcrumb-enable 'true)
+;(setq lsp-ui-sideline-show-hover 'true)
+;(setq lsp-signature-auto-activate 'true) ;; you could manually request them via `lsp-signature-activate`
+;(setq lsp-signature-render-documentation nil)
+;(setq lsp-completion-show-detail 'true)
+;(setq lsp-completion-show-kind 'true)
+
+;; call clippy via rust-analyzer instead of rustic (the latter doesn't work):
+(setq lsp-rust-analyzer-cargo-watch-command "clippy")
+
+;; show inlay hints, interacts badly with lsp-ui-sideline:
+(setq lsp-rust-analyzer-inlay-hints-mode 'true)
+(setq lsp-rust-analyzer-server-display-inlay-hints t)
+
 
 (after! magit
   ;; autorefresh magit status buffer after save
