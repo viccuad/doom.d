@@ -89,7 +89,7 @@
   (delete 'visual evil-escape-excluded-states))
 
 ;; open flycheck errors as transient bottom
-(set-popup-rule! "^\\*Flycheck errors\\*$" :select t :side 'bottom :size 0.15)
+;;(set-popup-rule! "^\\*Flycheck errors\\*$" :select t :side 'bottom :size 0.15)
 
 (custom-set-faces!
   ;; simplify molokai/monokais:
