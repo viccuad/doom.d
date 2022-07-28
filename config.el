@@ -146,6 +146,13 @@
 (setq lsp-rust-analyzer-inlay-hints-mode 'true)
 (setq lsp-rust-analyzer-server-display-inlay-hints t)
 
+;; configure gopls, analogous of vscode settings.json
+;; https://github.com/golang/tools/blob/master/gopls/doc/emacs.md#configuring-gopls-via-lsp-mode
+;; (lsp-register-custom-settings
+;; '(("gopls.buildFlags" "-tags")))
+;;(setenv "GOFLAGS" "-tags=wasi")
+;;
+;; (setq lsp-go-env '((GOFLAGS . "-tags=wasi")))
 
 (after! magit
   ;; autorefresh magit status buffer after save
