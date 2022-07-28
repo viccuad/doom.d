@@ -56,3 +56,7 @@
 (package! diff-hl)
 
 (package! solaire-mode :disable t) ;; disable solaire-mode, on terminal it changes backgrounds
+
+;; workaround https://github.com/doomemacs/doomemacs/issues/6583
+(package! compat :pin "cc1924fd8b3f9b75b26bf93f084ea938c06f9615")
+
